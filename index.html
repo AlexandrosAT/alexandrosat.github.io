@@ -1,61 +1,402 @@
-    <main>
-      <div className="position-relative">
-        <section className="section section-lg section-shaped pb-250">
-          <div className="shape shape-style-1 bg-gradient-info">
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
-          <Container className="py-lg-md d-flex">
-            <div className="col px-0">
-              <Row>
-                <Col lg="6">
-                  <h1 className="display-3 text-white">
-                    {greetings.title + ' '}
-                  </h1>
-                  <p className="lead text-white">{greetings.description}</p>
-                  <SocialLinks />
-                  {greetings.resumeLink && (
-                    <div className="btn-wrapper my-4">
-                      <Button
-                        className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                        color="default"
-                        href={greetings.resumeLink}
-                      >
-                        <span className="btn-inner--icon mr-1">
-                          <i className="fa fa-file" />
-                        </span>
-                        <span className="btn-inner--text">See My Resume</span>
-                      </Button>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0035)https://www.anthouliastopas-ike.eu/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ</title>
+
+
+<style type="text/css">
+<!-- 
+    a:link {
+	color: #03C;
+	text-decoration: underline;
+    }
+    a:active { color:red }
+    a:visited {
+	color: #606;
+	font-family: Verdana, Geneva, sans-serif;
+}
+    body {
+	background-color: #666;
+	color: #393838;
+    }
+    .text2 {
+	font-family: 'Helvetica','Arial','Sans-serif';
+	font-size: 28.658px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+    }
+    .text4 {
+	font-family: 'Helvetica', 'Arial', 'Sans-serif';
+	font-size: 13.5px;
+	text-decoration: none;
+	color: #393838;
+	line-height: 19px;
+    }
+    .text3 {
+	font-family: 'Helvetica','Arial','Sans-serif';
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #F00;
+    }
+    .text8 {
+        font-size:2px;
+    }
+    .text1 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+    }
+    .text5 {
+        font-family:'Helvetica','Arial','Sans-serif';
+        font-size:12px;
+        text-decoration:none;
+        color:white;
+    }
+    .pNormal {
+    }
+    .para1 {
+        line-height:18.75px;
+    }
+    .para2 {
+        text-align:right;
+    }
+    .box1 {
+        background-color:white;
+    }
+    .box2 {
+        background-color:#495386;
+    }
+    .box3 {
+        padding-top:1px;
+        padding-left:0px;
+        padding-bottom:0px;
+        padding-right:0px;
+    }
+    .box4 {
+        background-color:white;
+        padding-top:0.75px;
+        padding-left:0px;
+        padding-bottom:0px;
+        padding-right:0px;
+    }
+    .box5 {
+        padding-top:1.146px;
+        padding-left:0px;
+        padding-bottom:0px;
+        padding-right:0px;
+    }
+    .box6 {
+        background-color:white;
+        width:739px;
+        height:189.999px;
+    }
+    .box7 {
+	border-width: 2px;
+	border-style: solid;
+	border-color: #393838;
+	width: 735px;
+	height: 209px;
+	width: /* For Internet Explorer consistency. */ "739px";
+	height: /* For Internet Explorer consistency.  */ 213px;
+	background-color: #ECECEC;
+	overflow: visible;
+	padding-top: 1px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+    }
+.text21 {        font-family:'Helvetica','Arial','Sans-serif';
+        font-size:25px;
+        font-weight:bold;
+        text-decoration:none;
+        color:red;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+a {
+	font-weight: bold;
+}
+a {
+	text-align: center;
+}
+a {
+	text-align: center;
+}
+.box1 table tr td .box7 table tr td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+.b {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.text6 {
+	font-family: 'Helvetica','Arial','Sans-serif';
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #393838;
+}
+.box1 table tr td table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+.text7 {font-family:'Helvetica','Arial','Sans-serif';
+        font-size:30px;
+        font-weight:bold;
+        text-decoration:none;
+        color:#393838;
+}
+.box1 table tr td table tr td strong {
+	font-size: 13,5;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.text41 {	font-family: 'Helvetica', 'Arial', 'Sans-serif';
+	font-size: 13.5px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #393838;
+	line-height: 19px;
+}
+ -->
+</style>
+</head>
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+    <tbody><tr>
+        <td bgcolor="white" valign="top" width="765" height="1011">
+        <div class="box1">
+            <table border="0" cellspacing="0" cellpadding="0" align="left" width="765" height="1246" bgcolor="white">
+                <tbody><tr>
+                    <td colspan="8"></td><td valign="top" width="7" height="26">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td><td colspan="3" valign="top" height="47">
+                    <div class="box5">
+                        <div class="pNormal">
+                          <p><span class="text6">ALEXANDROS ANTHOULIAS-TOPAS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</span></p>
+                        </div>
                     </div>
-                  )}
-                </Col>
-                <Col lg="6">
-                  <GreetingLottie animationPath="/lottie/coding.json" />
-                </Col>
-              </Row>
-            </div>
-          </Container>
-          {/* SVG separator */}
-          <div className="separator separator-bottom separator-skew">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon className="fill-white" points="2560 0 2560 100 0 100" />
-            </svg>
-          </div>
-        </section>
-        {/* 1st Hero Variation */}
-      </div>
-    </main>
+                    </td><td></td><td valign="top" width="7" height="47">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="8"></td><td valign="top" width="7" height="29">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td></td><td colspan="7" valign="top" height="190">
+                    <div class="box6">
+                        <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/pic1.jpg" alt="pic.jpg" width="739" height="190" border="0"></div>
+                    </td><td valign="top" width="7" height="190">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="8"></td><td valign="top" width="7" height="11">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td height="217" colspan="3" valign="top" bgcolor="white" class="text4"><span class="text41">Σάββα Διάκου 14<br>
+Ρόδος - Τ.Κ.: 85100<br>
+<br>
+e-mail: savvasks3@gmail.com</span></td><td colspan="2"><p align="justify" class="text4"><strong>ΕΤΑΙΡΟΣ:</strong><br>
+  <strong>ΑΛΕΞΑΝΔΡΟΣ ΑΝΘΟΥΛΙΑΣ ΤΟΠΑΣ του ΑΝΑΣΤΑΣΙΟΥ</strong><br>
+  Δ/νση κατοικίας: Σάββα Διάκου 14, Ρόδος, Δωδεκανήσου<br>
+  1) κεφαλαιακή εισφορά αξίας 4.000,00 ευρώ, έλαβε 4.000 εταιρικά μερίδια, ονομαστικής αξίας 1,00 ευρώ έκαστο<br>
+  2) εξωκεφαλαιακή εισφορά αξίας 0,00<br>
+  3) εγγυητική εισφορά αξίας 0,00 </p>
+  <p align="justify"><span class="text4"><strong>ΔΙΑΧΕΙΡΙΣΤΗΣ:</strong><br>
+<strong>ΑΛΕΞΑΝΔΡΟΣ ΑΝΘΟΥΛΙΑΣ ΤΟΠΑΣ του ΑΝΑΣΤΑΣΙΟΥ</strong></span></p>  <p class="text4">&nbsp;</p></td><td valign="top" width="7" height="217">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="8"></td><td valign="top" width="7" height="5">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td><td colspan="3" valign="top" height="27">
+                    <div class="box3">
+                        <div class="pNormal">
+                            <span class="text3">Οικονομικές καταστάσεις</span>
+                        </div>
+                    </div>
+                    </td><td colspan="3"></td><td valign="top" width="7" height="27">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="8"></td><td valign="top" width="7" height="3">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td></td><td colspan="7" valign="top" height="213">
+                    <div class="box7">
+                        <span class="text8">&nbsp;</span>
+                        <table width="734" height="208" border="1" align="center">
+                          <tbody><tr>
+                            <td width="225">&nbsp;</td>
+                            <td width="237">&nbsp;</td>
+                            <td width="238">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td width="225">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                        </tbody></table>
+                    </div></td><td valign="top" width="7" height="213">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="8"></td><td valign="top" width="7" height="20">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td><td colspan="3" valign="top" height="27">
+                    <div class="box3">
+                        <div class="pNormal">
+                            <span class="text3">Ανακοινώσεις 
+                            </span>
+                        </div>
+                    </div>
+                    </td><td colspan="3"></td><td valign="top" width="7" height="27">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="8"></td><td valign="top" width="7" height="3">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td></td><td colspan="7" valign="top" height="213">
+                    <div class="box7">
+                        <span class="text8">&nbsp;</span>
+                        <table width="734" height="208" border="1" align="center">
+                          <tbody><tr>
+                            <td width="237">&nbsp;</td>
+                            <td width="237">&nbsp;</td>
+                            <td width="238">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                        </tbody></table>
+                    </div></td><td valign="top" width="7" height="213">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="8"></td><td valign="top" width="7" height="36">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td></td><td colspan="7" bgcolor="#495386" valign="top" height="32">
+                    <div class="box2">
+                        <table border="0" cellspacing="0" cellpadding="0" align="left" width="739" height="32" bgcolor="#495386">
+                            <tbody><tr>
+                                <td colspan="2"></td><td valign="top" width="15" height="7">
+                                <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td></td><td valign="top" width="612" height="22">
+                                <div class="box3">
+                                    <div class="para2"><span class="text1">ALEXANDROS ANTHOULIAS-TOPAS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</span><span class="text5"><br> 
+                                        </span>
+                                  </div>
+                                     </div>
+                                </td><td valign="top" width="15" height="22">
+                                <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="112" height="3">
+                                <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td><td valign="top" width="612" height="3">
+                                <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td><td valign="top" width="15" height="3">
+                          <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td></tr>
+                        </tbody></table>
+                    </div>
+                    </td><td valign="top" width="7" height="32">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td valign="top" width="4" height="12">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td><td valign="top" width="7" height="12">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td><td valign="top" width="1" height="12">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td><td valign="top" width="9" height="12">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td><td valign="top" width="231" height="12">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td><td valign="top" width="1" height="12">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td><td valign="top" width="473" height="12">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td><td valign="top" width="32" height="12">
+                    <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td><td valign="top" width="7" height="12">
+              <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/block.gif" alt="" width="1" height="1" border="0"></td></tr>
+            </tbody></table>
+        </div>
+        </td><td valign="top" width="1" height="1011">
+        <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/qwdspacer.gif" alt="" width="1" height="1011" border="0"></td>
+    </tr>
+    <tr>
+        <td valign="top" width="765" height="1">
+        <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/qwdspacer.gif" alt="" width="765" height="1" border="0"></td><td valign="top" width="1" height="1">
+        <img src="./ALEXANDROS ANTHOULIAS-TOPAS Μ. ΙΚΕ_files/qwdspacer.gif" alt="" width="1" height="1" border="0"></td></tr>
+</tbody></table>
+
+
+
+</body></html>
